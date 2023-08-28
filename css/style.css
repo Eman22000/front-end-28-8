@@ -1,0 +1,791 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family:'Times New Roman', Times, serif ;
+    background-color: rgba(201, 181, 156, 0.946);
+
+}
+a{
+    display: block;
+    text-decoration: none; 
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.center{
+    margin: 0 5%;
+}
+.tit{
+    text-align: center;
+    font-size: x-large;
+    padding: 10px 0px;
+}
+
+/* //////////////////////////////// */
+/* home overlaing */
+
+.home{
+    background-image: url(../image/foodiesfeed.com_apple-pie-detail-cropped.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.61);
+}
+
+/* /////////////////////////////// */
+/* header ---------------- */
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(122, 101, 75, 0.837);
+    opacity: 0.75;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.header-logo{
+    height: 100%;
+    margin-left: 100px;
+}
+.header-nav{
+    float: right;
+    list-style-type: none;
+}
+.header-nav li{
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 18px;
+}
+.header-nav a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+}
+.header-nav a:hover{
+    background-color:rgba(103, 85, 63, 0.837) ;
+    border: 2px solid rgba(103, 84, 62, 0.837);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* ////////////////////////////////////// */
+/* home contant ------------*/
+
+.home-contant{
+    width: 65%;
+    color: aliceblue;
+    /* hero image */
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50% ,-50%);
+
+    text-align: center;
+
+}
+.home-title{
+    font-size: 100px;
+}
+.home-p1{
+    font-size: 18px;
+    font-weight:bold;
+    letter-spacing: 1px;
+}
+.home-btn{
+    width: 150px;
+    height: 40px;
+    font-size: larger;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.home-btn:after{
+    position: absolute;
+    content: "";
+
+    width:100% ;
+    height:0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.504);
+    opacity: 0;
+    transition: 0.5s;
+}
+.btn1{
+    background-color: rgba(201, 181, 156, 0.946);
+    color: black;
+}
+.btn2{
+    background-color: black;
+    color: rgba(201, 181, 156, 0.946);
+}
+.home-btn:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7; 
+}
+
+/* /////////////////////////////////////////////// */
+/* Welcome page -------------------------*/
+
+.ander-dash{
+    width: 100px;
+    height: 2px;
+    border: 2px solid rgb(87, 87, 84) ;
+    margin: auto;
+    margin-top: 5px;
+}
+.welcome{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(201, 181, 156, 0.946);
+    padding-top: 50px;
+}
+.welcome-item{
+    float: left;
+    width: 30%;
+    height: 350px;
+    padding: 20px 15px;
+    border: 2px solid  rgba(122, 101, 75, 0.946);
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+    position: relative; /* after */
+    color: black;
+}
+.welcome-item:after{
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0 ;
+    left: 0;
+
+    background-color:  rgb(2, 2, 2);
+    opacity: 0;
+    transition:0.5s;
+    z-index: -1;
+}
+.welcome-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    color: aliceblue;
+   
+}
+.wic {
+    font-size: x-large;
+}
+.welcome-item h3{
+    color: rgba(245, 241, 236, 0.975);
+    background-color:rgba(122, 101, 75, 0.946);
+    border: 2px solid rgba(122, 101, 75, 0.946);
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: -40px;
+    margin-left: 9px;
+    padding-top: 5px;
+    font-size: x-large;
+}
+.welcome-item-contant{
+    padding-top: 20px;
+    /* z-index: 1; */
+}
+.welcome-item-contant:hover{
+    color: aliceblue;
+    transition: 0.5s;
+}
+.welcome-item-contant p{
+    padding-top: 15px;
+}
+.witc{
+    padding: 70px;
+}
+.welcome-item-contant a{
+    margin-top: 10px;
+    color: rgba(122, 101, 75, 0.837);
+}
+
+/* ////////////////////////////////////////////// */
+/* Bakery story page ------------- */
+
+.story{
+    height: 100vh;
+    margin: auto;
+    padding-top: 100px;
+    background-color: rgba(201, 181, 156, 0.946);
+}
+.story-img{
+    float: left;
+}
+.story-img img{
+    width: 450px;
+    height: 400px;
+}
+.story-para{
+    width: 50%;
+    line-height: 25px;
+    padding-left: 60px;
+    padding-top: 20px;
+    float: left;
+}
+.story-para h4{
+    font-size: x-large;
+    padding-bottom: 10px;
+}
+.clear{
+    clear: both;
+}
+
+/* /////////////////////////////////////////////// */
+/* Products page ---------------------- */
+
+.products{ 
+    background-color: rgba(201, 181, 156, 0.946);
+}
+.products-item{
+    width: 30%;
+    float: left;
+    margin-bottom: 30px;
+    padding: 30px;
+    position: relative;/* overlay */
+}
+
+.products-item img{
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+.products-item-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(122, 101, 75, 0.837) ;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.products-item-overlay:hover{
+    opacity: 0.9;
+}
+
+.products-item-overlay-contant .products-item-overlay-info{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    width: 80%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    margin-left: 150px;
+    margin-bottom: 100px;
+}
+.products-item-overlay-contant .category{
+    color: aliceblue;
+    font-size: larger;
+    top: 30px;
+    opacity: 0;
+    visibility: visible;
+    transition: top 1s , opacity 0.5s;
+    transition-delay: 0;
+    position: relative;
+    margin-top: -35px;
+}
+.products-item-overlay-contant .overlay-contant-title{
+    color: aliceblue;
+    line-height: 20px;
+    top: 30px;
+    opacity: 0;
+    font-size: large;
+    visibility: hidden;
+    transition: top 1s , opacity 0.5s;
+    transition-delay: 0.3s;
+    position: relative;
+    padding-bottom: 10px;
+}
+.products-item-overlay-contant a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: aliceblue;
+    color: rgba(122, 101, 75, 0.837) ;
+    text-align: center;
+    font-size: large;
+    line-height: 20px;
+    padding-top: 6px;
+    border-radius: 4px;
+    margin-left: 5px;
+    position: relative;
+    top:30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s ,opacity 0.5s;
+    transition-delay: .6s;
+}
+.products-item:hover .products-item-overlay-contant .category,
+.products-item:hover .products-item-overlay-contant .overlay-contant-title,
+.products-item:hover .products-item-overlay-contant a{
+    top:0;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ///////////////////////////////////////////// */
+/* pricing-table ----------------------- */
+
+.pricing-table{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(201, 181, 156, 0.946);
+    padding-top:50px ;
+}
+.pricing-table-contant{
+    margin-left: 22px;
+    margin-top: 50px;
+}
+.pricing-table-item{
+    float: left;
+    width: 30%;
+    height: 350px;
+    border: 2px solid rgba(122, 101, 75, 0.946);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+}
+.pti2{
+    margin:0px 40px;
+}
+.pricing-table-item-head-circle{
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(122, 101, 75, 0.946);
+    border-radius: 50%;
+    margin-left: 90px ;
+    padding-top: 20px;
+}
+.pricing-table-item-head h4{
+    line-height: 50px;
+
+}
+.pricing-table-item p{
+    line-height: 20px;
+    margin-top: 10px;
+}
+.pricing-table-item button{
+    background-color: rgba(122, 101, 75, 0.946);
+    color: aliceblue;
+    width: 120px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.pricing-table-item::after{
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 0 ;
+    left: 0 ;
+
+    background-color: rgba(122, 101, 75, 0.886);
+    opacity: 0;
+}
+.pricing-table-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    color: aliceblue;
+    transition: 0.5s;
+}
+.pricing-table-item:hover .pricing-table-item-head{
+    color: aliceblue;
+    transition: 0.5s;
+} 
+
+/* ////////////////////////////////////////// */
+/* team page ------------------------------------ */
+
+.team{
+    height: 100vh;
+    background-color: rgba(201, 181, 156, 0.946);
+}
+.team-contant{
+    margin-top: 50px;
+}
+.team-item{
+    float: left;
+    width: 30%;
+    padding: 20px 15px;
+    text-align: center;
+    background-color: rgba(218, 208, 196, 0.946);
+    border-radius: 15px;
+    position: relative;
+}
+.team-img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.ti2{
+    margin: 0 5%;
+}
+.team-img img{
+    width: 100%;
+    border-radius: 15px;
+}
+.team-item .team-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(37, 38, 39);
+    border-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+}
+.team-item:hover .team-overlay {
+    visibility: visible;
+    opacity: 0.6;
+}
+.team-overlay a{
+    display:block;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(218, 208, 196);
+    margin-left: auto;
+    color: rgb(26, 26, 27);
+}
+.team-overlay .a1{
+    border-top-right-radius: 15px;
+}
+.team-overlay .a3{
+    border-bottom-left-radius: 15px;
+}
+.team-overlay a i{
+    line-height: 60px;
+}
+.team-item:after{
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 1;
+    left: 0;
+
+    background-color:  rgb(122, 101, 75);
+    border-radius: 15px;
+    opacity: 0;
+    
+    transition: 0.5s;
+}
+.team-item:hover::after{
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+.team-info{
+    font-size: large;
+    line-height: 20px;
+}
+.team-item:hover .team-info h4{
+    color: rgb(157, 120, 34);
+}
+
+/*////////////////////////////////////////////////*/
+/* blog ----------------------------------- */
+
+.blog{
+    height: 100vh;
+    background-color: rgba(201, 181, 156, 0.946);
+}
+.blog-item{
+    float: left;
+    width: 30%;
+    background-color: rgba(218, 208, 196, 0.946);
+    border-radius: 15px;
+    padding: 20px 15px;
+    text-align: center;
+    position: relative;
+}
+.blog-img{
+    width: 90%;
+}
+.blog-img img{
+    display: block;
+    width: 100%;
+    margin-left: 14px;
+}
+.blog-list li{
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 10px 0;
+    padding-right: 10px;
+}
+.blog-list i{
+    font-size: small;
+    color: rgba(87, 72, 54, 0.946);
+}
+.blog-title,.blog-desc,.blog-link{
+    text-align: left;
+    line-height: 20px;
+}
+.blog-link{
+    color: rgb(161, 107, 42);
+}
+.blog-item:after{
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 1;
+    left: 0;
+
+    background-color: rgba(76, 63, 48, 0.884);
+    border-radius: 15px;
+    opacity: 0;
+
+    transition: 0.5s;
+}
+.blog-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+/* ///////////////////////////////// */
+/* offer -----------------------  */
+
+.offer{
+    height: 100vh;
+    background-color: rgba(201, 181, 156, 0.946);
+}
+.offer-item{
+    float: left;
+    width: 30%;
+    border: 2px solid  rgba(122, 101, 75, 0.946);
+    border-radius: 15px;
+    padding: 20px 15px;
+    text-align: left;
+    position: relative;
+    margin-bottom: 20px;
+}
+.offer-title h4{
+    display: inline;
+    line-height: 20px;
+}
+.offer-title{
+    padding-bottom: 20px;
+    font-size: x-large;
+}
+.offer-desc p{
+    margin-left: 25px;
+}
+.offer-item:after{
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    border-radius: 15px;
+    transition: 0.5s;
+    z-index: -1;
+}
+.offer-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.offer-item:hover .offer-title h4{
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+/* /////////////////////////////////////////// */
+/* numbers --------------------------- */
+
+.numbers{
+    height: 350px;
+    background-image: url(../image/foodiesfeed.com_apple-pie-macro.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.numbers-item{
+    float: left;
+    width: 22%;
+    text-align: center;
+    color: antiquewhite;
+}
+.numbers-contant{
+    margin-left:50px ;
+    padding-top: 120px;
+}
+.numbers-item i ,.numbers-item h4 {
+    font-size: 35px;
+}
+.numbers-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(37, 38, 39, 0.592);
+    border-radius: 15px;
+}
+
+/* ////////////////////////////////////////// */
+/* rating ------------------------ */
+
+.rating{
+    height: 350px;
+    background-image: url(../image/foodiesfeed.com_apple-pie-macro.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.rating-item{
+   float: left; 
+   width: 45%;
+   color: antiquewhite;
+   padding-right: 10%;
+   line-height: 20px;
+}
+.rating-contant{
+    margin-left: 16%;
+    margin-top: 100px;
+}
+.rating-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(../image/Picsart_22-12-21_11-44-42-447.jpg);
+    background-size: cover;
+    display: inline-block;
+    float: left;
+}
+.rating-head-info{
+    float: left;
+    margin-top: 10px;
+    padding-left: 10px;
+    line-height: 30px;
+}
+.rating-head-info h4,.rating-head-info p{
+    /* line-height: 100px; */
+    font-size: larger;
+}
+.rating-head-info p{
+    line-height: -90px;
+}
+.rating-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(37, 38, 39, 0.592);
+}
+
+/* ///////////////////////////////////////////////// */
+/* footer ---------------------*/
+.footer-img{
+    width: 150px;
+    height: 70px;
+}
+.footer{
+    background-color: rgba(82, 68, 51, 0.946);
+    text-align: center;
+    height: 300px;
+    padding: 60px 0;
+}
+.footer-links{
+    list-style: none;
+    margin: 20px 0;
+}
+.footer-links li{
+    display: inline-block;
+    background-color: rgba(135, 112, 84, 0.946);
+    width:50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+}
+.footer-links li a{
+    display: block;
+    width:100%;
+    height: 100%;
+    color: rgba(122, 101, 75, 0.946);
+    color: #fff;
+    line-height: 50px;
+    padding-top: 15px;
+    padding-right: 15px;
+    font-size: 23px;
+    margin: 0 8px;
+}
+.footer-links li:after{
+    position: absolute;
+    content: "";
+    opacity: 0;
+    transition: .3s;
+    background-color:rgba(77, 64, 48, 0.946);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+}
+.footer-links li:hover:after{
+    opacity:0.7;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;
+}
+.footer p{
+    color:#999;
+    font-size: 12px;
+    text-transform: uppercase;
+}
